@@ -1,24 +1,35 @@
-# Vue 3 Project with Vite
+# vue-project
 
-This template helps you get started developing with **Vue 3** in **Vite**, providing a modern and fast setup with support for hot-reloading, minification, and optimized builds.
+This template should help get you started developing with Vue 3 in Vite.
+
+## Recommended IDE Setup
+
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+
+## Customize configuration
+
+See [Vite Configuration Reference](https://vite.dev/config/).
 
 ## Project Setup
 
-### Install Dependencies
-
-To install the project dependencies, run:
-
-```bash
+```sh
 npm install
+```
 
+### Compile and Hot-Reload for Development
 
+```sh
+npm run dev
+```
 
-### Updates & Additions:
+### Compile and Minify for Production
 
-1. **Features Section**: Added a list of key features (Vue 3, Vite, ESLint, Vue Router, and Vuex).
-2. **Project Structure**: Describes the directory structure with more clarity.
-3. **Environment Variables**: Added instructions for setting up and using `.env` files.
-4. **Common Issues & Troubleshooting**: Added solutions for some common issues you might encounter during development.
-5. **Contributing Section**: A note for contributions if others want to help improve the project.
+```sh
+npm run build
+```
 
-This updated `README.md` should be more informative and provide helpful guidance to both developers and contributors. Let me know if you'd like to make further adjustments!
+### Lint with [ESLint](https://eslint.org/)
+
+```sh
+npm run lint
+```
