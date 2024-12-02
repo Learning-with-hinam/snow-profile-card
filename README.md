@@ -1,35 +1,37 @@
-# vue-project
+Vue 3 Project with Vite
+This template helps you get started developing with Vue 3 in Vite.
 
-This template should help get you started developing with Vue 3 in Vite.
+Recommended IDE Setup
+We recommend using VSCode with the Volar extension. Make sure to disable Vetur if you're using Volar, as it provides better support for Vue 3.
 
-## Recommended IDE Setup
+Steps to Set Up:
+Install Volar extension in VSCode.
+Disable the Vetur extension (only if you are using Volar).
+Project Setup
+Install Dependencies
+To install the project dependencies, run:
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
 npm install
-```
+Compile and Hot-Reload for Development
+To start the development server and enable hot-reloading, run:
 
-### Compile and Hot-Reload for Development
-
-```sh
 npm run dev
-```
+This will start the Vite development server at http://localhost:3000.
 
-### Compile and Minify for Production
+Compile and Minify for Production
+To build the project for production (with optimizations), run:
 
-```sh
 npm run build
-```
+This will generate a production-ready build in the dist/ directory.
 
-### Lint with [ESLint](https://eslint.org/)
+Linting with ESLint
+To lint the project and check for code style issues, run:
 
-```sh
 npm run lint
-```
+Customize Configuration
+For further customization and detailed configuration, you can refer to the Vite Configuration Reference.
+
+Project Structure
+src/: Contains the main source files for the Vue app.
+public/: Contains static assets.
+vite.config.js: The configuration file for Vite.
