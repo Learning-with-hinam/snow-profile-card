@@ -1,21 +1,32 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+import { ref } from 'vue'
+
+const user = ref({
+  id: 1,
+  avatar: 'https://www.w3schools.com/w3images/team3.jpg',
+  name: 'snow',
+  jobTitle: 'Software Engineer',
+  university: 'Industrial University',
+})
 </script>
 
 <template>
   <div>
-    <header>
-      <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
+    <h2 style="text-align: center">User Profile Card</h2>
 
-      <div class="wrapper">
-        <HelloWorld msg="You did it!" />
+    <div class="card">
+      <img :src="user.avatar" alt="avatar" style="width: 100%" />
+      <h1>{{ user.name }}</h1>
+      <p>{{ user.jobTitle }}</p>
+      <p>{{ user.university }}</p>
+      <div style="margin: 24px 0">
+        <a href="#"><i class="fa fa-dribbble"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <a href="#"><i class="fa fa-facebook"></i></a>
       </div>
-    </header>
-
-    <main>
-      <TheWelcome />
-    </main>
+      <p><button>Contact</button></p>
+    </div>
   </div>
 </template>
 
